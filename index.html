@@ -33,6 +33,10 @@
         vr-mode-ui="enabled: false;"
         renderer="logarithmicDepthBuffer: true;"
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+	    
+	<a-assets>
+          <a-asset-item id="dinasaur1" src="https://melonpult0.github.io/CarnegieMuseumAR/GLTF/model.gltf"></a-asset-item>
+      	</a-assets>
 
         <!-- use rawgithack to retrieve the correct url for nft marker (see 'trex' below) -->
         <a-nft
@@ -48,21 +52,18 @@
         </a-nft>
 	    
 	<a-nft
-            type='nft' url='https://melonpult0.github.io/Ar.js_test/nft/img2'
-            smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
-            <a-entity
-                <a-entity
-		   geometry="primitive: plane; height: auto; width: auto"
-		    material="color: #9BE3DE"
-		    position="100 100 0"
-	            rotation="-90 0 0"
-		    text="scale: 1; 
-			  font: aileronsemibold;
-			  value: test">
-        </a-entity>
-                >
-            </a-entity>
+          type='nft' url='https://melonpult0.github.io/Ar.js_test/nft/img2'
+          smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
+          <a-entity
+	   geometry="primitive: plane; height: auto; width: auto"
+	    material="color: #9BE3DE"
+	    position="100 100 0"
+	    rotation="-90 0 0"
+	    text="scale: 1; 
+		  font: aileronsemibold;
+		  value: test">
+          </a-entity>
         </a-nft>
-		<a-entity camera></a-entity>
+	<a-entity camera></a-entity>
     </a-scene>
 </body>
